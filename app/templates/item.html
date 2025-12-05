@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumalor Backend</title>
+    <title>Item {{ id }}</title>
     <link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}">
 </head>
 <body>
@@ -13,8 +13,9 @@
         <a href="/health">Health (JSON)</a>
     </nav>
     <main>
-        <h1>{{ message }}</h1>
-        <p>Status endpoint: <a href="/health">/health</a></p>
+        <h1>Item {{ id }}</h1>
+        <p>This is a placeholder Jinja template rendering item <strong>{{ id }}</strong>.</p>
+        <p><a href="/view">Back to home</a></p>
     </main>
 </body>
 </html>
